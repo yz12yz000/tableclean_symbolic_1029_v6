@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-09-28T17:26:04.366494+08:00",
+  "mode": "execute",
+  "motion_sent": false,
+  "gripper_commands_sent": false,
+  "passed": false,
+  "error": "trajectory_controller_not_active:run_run_grasp_position_control.sh_first",
+  "finished_at": "2026-09-28T17:26:04.557144+08:00"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "annotation": "annotations/live_containers_20261022.json",
+  "classes": [
+    "bowl",
+    "tray",
+    "cup",
+    "spoon"
+  ],
+  "inference_roi": [
+    330,
+    375,
+    930,
+    595
+  ],
+  "imgsz": 960
+}

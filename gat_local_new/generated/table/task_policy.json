@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "plan_id": "2f7a8f27-7e8f-4c41-9f8a-0b1fd37d22a1",
+  "task_type": "clear_table",
+  "selector": {
+    "kind": "all_bowls"
+  },
+  "priority": {
+    "order": "largest_first",
+    "regions": []
+  },
+  "limits": {
+    "max_observation_rounds": 30,
+    "max_replans": 12,
+    "deadline_s": 900,
+    "max_reobservations": 12
+  },
+  "mode": "preview",
+  "runner_protocol_version": "table-runner-v1",
+  "workspace_revision": "release:table-clean-v1",
+  "model": {
+    "provider": "openai",
+    "model": "gpt-6-astra",
+    "plan_hash": "c232ee72014b1319068cf199125361f006fe91ed5d005de1d6df8c143c3ca39e"
+  },
+  "reason": "默认收桌面预览策略；真实执行前必须重新生成并确认。"
+}

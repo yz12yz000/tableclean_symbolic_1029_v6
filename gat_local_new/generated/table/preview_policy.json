@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "plan_id": "0bfe9fd1-b403-456b-9c06-1b2d49e9902b",
+  "task_type": "clear_table",
+  "selector": {"kind": "all_bowls"},
+  "priority": {"order": "largest_first", "regions": []},
+  "limits": {"max_completed_objects": 2, "max_reobservations": 2, "max_observation_rounds": 30, "max_replans": 12, "deadline_s": 900},
+  "mode": "preview",
+  "runner_protocol_version": "table-runner-v1",
+  "workspace_revision": "release:table-clean-v1",
+  "model": {"provider": "openai", "model": "gpt-6-sol", "plan_hash": "eadcca383da0efce4bec68adc9834f352b0f2e8863e1e1edd8a16ae4b5924e3b"}
+}

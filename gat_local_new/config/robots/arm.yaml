@@ -1,0 +1,16 @@
+robot_id: arm-01
+kind: robot_arm
+transport: local
+workspace: /home/rob/table_clean_ws
+parameterized_place_program:
+  path: /home/rob/table_clean_ws/run_pipeline_place_execute.sh
+  preview_path: /home/rob/table_clean_ws/run_pipeline_place_test.sh
+  shell: bash
+  arguments: ["--x", "<x>", "--y", "<y>", "--z", "<z>"]
+  coordinate_frame: base
+  target_kind: release_position_base_tool0
+place_zones_file: config/robots/arm_place_zones.yaml
+safety:
+  require_user_confirmation_before_live_run: true
+  do_not_assume_feedback: true
+  do_not_guess_ros_interfaces: true

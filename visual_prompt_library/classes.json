@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "classes": [
+    {
+      "id": 0,
+      "name": "bowl"
+    },
+    {
+      "id": 1,
+      "name": "tray"
+    },
+    {
+      "id": 2,
+      "name": "cup"
+    },
+    {
+      "id": 3,
+      "name": "plate"
+    },
+    {
+      "id": 4,
+      "name": "knife"
+    },
+    {
+      "id": 5,
+      "name": "fork"
+    },
+    {
+      "id": 6,
+      "name": "spoon"
+    }
+  ]
+}

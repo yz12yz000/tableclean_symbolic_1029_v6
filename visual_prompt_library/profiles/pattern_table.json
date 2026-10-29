@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "annotation": "annotations/pattern_table.json",
+  "inference_roi": [
+    220,
+    300,
+    1000,
+    700
+  ],
+  "imgsz": 960
+}

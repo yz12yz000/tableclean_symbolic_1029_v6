@@ -1,0 +1,45 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "gat-arm",
+  "model": "qwen-local/Qwen3-VL-32B-Instruct",
+  "small_model": "qwen-local/Qwen3-VL-32B-Instruct",
+  "provider": {
+    "qwen-local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Local Qwen3-VL",
+      "options": {
+        "baseURL": "http://127.0.0.1:8000/v1",
+        "apiKey": "{env:QWEN_API_KEY}",
+        "timeout": 600000
+      },
+      "models": {
+        "Qwen3-VL-32B-Instruct": {
+          "name": "Qwen3-VL-32B-Instruct",
+          "limit": {
+            "context": 32768,
+            "output": 4096
+          }
+        }
+      }
+    }
+  },
+  "agent": {
+    "gat-arm": {
+      "description": "GAT-Arm agent for the dedicated robot arm at 192.168.0.13.",
+      "mode": "primary",
+      "model": "qwen-local/Qwen3-VL-32B-Instruct",
+      "steps": 30,
+      "temperature": 0.7,
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "question": "allow"
+      }
+    }
+  },
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "question": "allow"
+  }
+}

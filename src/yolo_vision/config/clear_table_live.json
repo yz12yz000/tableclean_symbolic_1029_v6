@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "calibrated": true,
+  "motion_approved": true,
+  "calibration_note": "Gray tray dimensions confirmed by user 2026-10-22: inner 40x28 cm, outer 42x30 cm. Current visual-prompt model live_five_v001; plate is task alias bowl. Source polygon and blue release pose inherited from previous calibration, must be checked on the current scene. Motion authorized by user for the current gray-tray setup and original blue release, 2026-10-22; default permission synchronized after explicit request to fix tray_motion_not_approved. Tray observation and placement verification remain mandatory. User requested placement allowance 5 mm and edge-preferred placement on 2026-10-27. Depth XY fit tolerance tightened to 5 mm to match reduced allowance; prior observed placement offsets exceeded this margin.",
+  "frame_id": "base",
+  "detector": "yolo",
+  "tray_size": [
+    0.4,
+    0.28
+  ],
+  "slots": [],
+  "bowl_radius": 0.03,
+  "edge_margin": 0.005,
+  "clearance": 0.005,
+  "position_tolerance": 0.005,
+  "depth_xy_tolerance": 0.005,
+  "refine_boundary": true,
+  "release_z": null,
+  "release_xy_offset": [
+    0.0,
+    0.0
+  ],
+  "source_polygon": [
+    [
+      -0.3699281670363909,
+      -0.6423096727798714
+    ],
+    [
+      -1.13253549155239,
+      0.03447160805996868
+    ],
+    [
+      -0.8925633200264423,
+      0.33707592701863814
+    ],
+    [
+      -0.10606223494926151,
+      -0.37353304433052215
+    ]
+  ],
+  "empty_confirmations": 2,
+  "yolo": {
+    "model_path": "models/visual_prompt_releases/live_five_v001/model.pt",
+    "target_class": "tray",
+    "confidence": 0.5,
+    "imgsz": 960,
+    "device": "cpu"
+  },
+  "tray_outer_size": [
+    0.42,
+    0.3
+  ],
+  "known_bowl_radii": [],
+  "compensate_bowl_xy": true,
+  "object_geometry": "visual_rim",
+  "placement_mode": "grid",
+  "grid_step": 0.01,
+  "rim_outer_margin": 0.004,
+  "placement_match_tolerance": 0.05,
+  "placement_confirmations": 2,
+  "visual_rim_min_radius": 0.03,
+  "visual_rim_max_radius": 0.15
+}

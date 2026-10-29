@@ -1,0 +1,770 @@
+{
+  "date": "2026-10-03",
+  "protected_directories": [
+    "debug_output",
+    "output",
+    "log"
+  ],
+  "files": {
+    "run_robot_prepare_o.sh": {
+      "destination": "docs/archive/programs/run_robot_prepare_o.sh",
+      "reason": "重复脚本或当前主流程已停用的旧控制后端；仅作历史参考",
+      "original_sha256": "a38d7f5fde065ba1b686365ea2c71328e5b052cf9c94a3a4cdb00af2f762c3a8",
+      "bytes": 6310,
+      "archived_sha256": "a38d7f5fde065ba1b686365ea2c71328e5b052cf9c94a3a4cdb00af2f762c3a8",
+      "content_adjustment": "原样保留"
+    },
+    "bash/run_robot_prepare.sh": {
+      "destination": "docs/archive/programs/run_robot_prepare.sh",
+      "reason": "重复脚本或当前主流程已停用的旧控制后端；仅作历史参考",
+      "original_sha256": "a38d7f5fde065ba1b686365ea2c71328e5b052cf9c94a3a4cdb00af2f762c3a8",
+      "bytes": 6310,
+      "archived_sha256": "a38d7f5fde065ba1b686365ea2c71328e5b052cf9c94a3a4cdb00af2f762c3a8",
+      "content_adjustment": "原样保留"
+    },
+    "bash/run_pipeline_place_execute.sh": {
+      "destination": "docs/archive/programs/run_pipeline_place_execute.sh",
+      "reason": "重复脚本或当前主流程已停用的旧控制后端；仅作历史参考",
+      "original_sha256": "ab76f1f63fb16f4de82396e0aeff31badd4d6b01295d5050d1d4c1d67de0601d",
+      "bytes": 817,
+      "archived_sha256": "ab76f1f63fb16f4de82396e0aeff31badd4d6b01295d5050d1d4c1d67de0601d",
+      "content_adjustment": "原样保留"
+    },
+    "docs/switch_arm_control_mode.sh": {
+      "destination": "docs/archive/programs/switch_arm_control_mode.sh",
+      "reason": "重复脚本或当前主流程已停用的旧控制后端；仅作历史参考",
+      "original_sha256": "1a40c05e2d6f4bdd2b343fac04d122cc918d646f049f8ba91a17381f87a290bf",
+      "bytes": 8869,
+      "archived_sha256": "1a40c05e2d6f4bdd2b343fac04d122cc918d646f049f8ba91a17381f87a290bf",
+      "content_adjustment": "原样保留"
+    },
+    "docs/arm_base_joy_claw_lidar_camcolor0917.sh": {
+      "destination": "docs/archive/programs/arm_base_joy_claw_lidar_camcolor0917.sh",
+      "reason": "重复脚本或当前主流程已停用的旧控制后端；仅作历史参考",
+      "original_sha256": "46d4b38b72501fab7837e190f664f9bcb8197b45cfb1140a6dbe17148dd6316d",
+      "bytes": 20204,
+      "archived_sha256": "46d4b38b72501fab7837e190f664f9bcb8197b45cfb1140a6dbe17148dd6316d",
+      "content_adjustment": "原样保留"
+    },
+    "src/grasp_executor/grasp_executor/cartesian_ros.py": {
+      "destination": "docs/archive/programs/cartesian_ros.py",
+      "reason": "重复脚本或当前主流程已停用的旧控制后端；仅作历史参考",
+      "original_sha256": "d525f346111fb70f35d8efab70298c8bc50787c73aafd0d1eb257cbd5484219f",
+      "bytes": 8077,
+      "archived_sha256": "d525f346111fb70f35d8efab70298c8bc50787c73aafd0d1eb257cbd5484219f",
+      "content_adjustment": "原样保留"
+    },
+    "IMPLEMENT_pengzhuang.md": {
+      "destination": "docs/archive/plans/IMPLEMENT_pengzhuang.md",
+      "reason": "历史实施方案；当前入口、参数和功能以源码及现行说明为准",
+      "original_sha256": "ab9f1f61dfec7b4e3c5425f5808d9abac4c4d42df54ed9d3296f29a6aeb121a2",
+      "bytes": 31156,
+      "archived_sha256": "75075d0abfea438a0d3b23bc296f8bd2b343f1bd90bef6774157452acc4b476c",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "IMPLEMENT_zhuawanfangzhi_r.md": {
+      "destination": "docs/archive/plans/IMPLEMENT_zhuawanfangzhi_r.md",
+      "reason": "历史实施方案；当前入口、参数和功能以源码及现行说明为准",
+      "original_sha256": "18a1ca9357edad39b01b17beef099a456497ef68d076a924ffd1438643c998ef",
+      "bytes": 43287,
+      "archived_sha256": "ff3670360b386cb14123c9c670818343ff46c67df65ec21e1bad2730d0a59d71",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "IMPLEMENT_debug.md": {
+      "destination": "docs/archive/plans/IMPLEMENT_debug.md",
+      "reason": "历史实施方案；当前入口、参数和功能以源码及现行说明为准",
+      "original_sha256": "8b8fa9bd3c30a5b3979af7200e351358310d579cad7639ff8c945d19c7150f96",
+      "bytes": 30689,
+      "archived_sha256": "6a8ecc2834de1a4fb8df86fa07e0dcc2b31ef19d015bd8853f5093cf3982ecc8",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "IMPLEMENT_demo.md": {
+      "destination": "docs/archive/plans/IMPLEMENT_demo.md",
+      "reason": "历史实施方案；当前入口、参数和功能以源码及现行说明为准",
+      "original_sha256": "8bd6aa7b57840490660399ea8b6da0cf7e474b59b4d608f6418ab41aef6a19ae",
+      "bytes": 47488,
+      "archived_sha256": "a1cc7c342ece93393ff3160aeee4148d554c86fc81e9c60cbfa7fc92578a0f66",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "IMPLEMENT.md": {
+      "destination": "docs/archive/plans/IMPLEMENT.md",
+      "reason": "历史实施方案；当前入口、参数和功能以源码及现行说明为准",
+      "original_sha256": "9d88725cf1b443a1e98218618206558512389cb0d7f658b3f50741e312f7d0ff",
+      "bytes": 16168,
+      "archived_sha256": "e2c91f2af05136b870ea1a67c9fa5c6cc006a0f3ef7c16f968c8126543f79298",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "IMPLEMENT_zhuawanfangzhi.md": {
+      "destination": "docs/archive/plans/IMPLEMENT_zhuawanfangzhi.md",
+      "reason": "历史实施方案；当前入口、参数和功能以源码及现行说明为准",
+      "original_sha256": "5b939bbe71ab4e0006d7ee3dc56fcf381c74a3e268a79f6261a84d3dda86cc1b",
+      "bytes": 41302,
+      "archived_sha256": "41b5d657a14cfff4d884603447a41ac2eab2e58ffe449a5e49ae10202294e13a",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "gpt_command.txt": {
+      "destination": "docs/archive/notes/gpt_command.txt",
+      "reason": "历史提示词或旧启动说明；当前使用 docs/startup.md",
+      "original_sha256": "06c3c6684211ce853faf11f53c1be8b800d589f49d854844defe0634b758313f",
+      "bytes": 850,
+      "archived_sha256": "06c3c6684211ce853faf11f53c1be8b800d589f49d854844defe0634b758313f",
+      "content_adjustment": "原样保留"
+    },
+    "run.md": {
+      "destination": "docs/archive/notes/run.md",
+      "reason": "历史提示词或旧启动说明；当前使用 docs/startup.md",
+      "original_sha256": "bc7290cbc22922451c94026c314b4c0ea1d7d2ef9c62b6b4ae5d45e54e122c96",
+      "bytes": 4050,
+      "archived_sha256": "31365057f674025191ea7db795084028a19e2d4f39a64a4936e7dfc4683ee699",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "frames_2026-09-22_15.16.08.gv": {
+      "destination": "docs/archive/tf/frames_2026-09-22_15.16.08.gv",
+      "reason": "历史 TF 快照，不代表当前运行状态",
+      "original_sha256": "07d65821e116152063384bcea2afb818d5592334ba49e13f41cb2b7fa379bf9b",
+      "bytes": 4345,
+      "archived_sha256": "07d65821e116152063384bcea2afb818d5592334ba49e13f41cb2b7fa379bf9b",
+      "content_adjustment": "原样保留"
+    },
+    "frames_2026-09-22_15.16.08.pdf": {
+      "destination": "docs/archive/tf/frames_2026-09-22_15.16.08.pdf",
+      "reason": "历史 TF 快照，不代表当前运行状态",
+      "original_sha256": "74d3644465d24fcfb37f75e957ff51842733779ff3f1cb36932e3174c4eb3163",
+      "bytes": 18628,
+      "archived_sha256": "74d3644465d24fcfb37f75e957ff51842733779ff3f1cb36932e3174c4eb3163",
+      "content_adjustment": "原样保留"
+    },
+    "frames_2026-09-14_15.25.33.pdf": {
+      "destination": "docs/archive/tf/frames_2026-09-14_15.25.33.pdf",
+      "reason": "历史 TF 快照，不代表当前运行状态",
+      "original_sha256": "4f1723d06d95ee5e48987bcf0a273b5ff8b15dacd17d8028898aabe7c538d149",
+      "bytes": 19192,
+      "archived_sha256": "4f1723d06d95ee5e48987bcf0a273b5ff8b15dacd17d8028898aabe7c538d149",
+      "content_adjustment": "原样保留"
+    },
+    "src.zip": {
+      "destination": "docs/archive/source/src.zip",
+      "reason": "历史源码压缩包，当前源码位于 src/",
+      "original_sha256": "b22575fe6fe1822e69d0c937a92d01f385cabbd472fca93f54d30034d4044d80",
+      "bytes": 9829653,
+      "archived_sha256": "b22575fe6fe1822e69d0c937a92d01f385cabbd472fca93f54d30034d4044d80",
+      "content_adjustment": "原样保留"
+    },
+    "docs/ROS2+UR_v6.docx": {
+      "destination": "docs/archive/hardware/ROS2+UR_v6.docx",
+      "reason": "历史硬件参考资料",
+      "original_sha256": "5cf80323541fc3a2cb2f20b638a060ef521ae0d51f64cbd2b19b1ecc58fe4162",
+      "bytes": 171554,
+      "archived_sha256": "5cf80323541fc3a2cb2f20b638a060ef521ae0d51f64cbd2b19b1ecc58fe4162",
+      "content_adjustment": "原样保留"
+    },
+    "docs/automatic_count_20260923.md": {
+      "destination": "docs/archive/reports/automatic_count_20260923.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "5e4dfe193aab67b12d7ce1dcd0e70a20d4563926a7610aad1f4bf707a0c1c50d",
+      "bytes": 9112,
+      "archived_sha256": "adc15885be45f40b79fa00e63b28e02b4a830a91da41ac77b7b26b4ab1e55b3a",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/bowl_pipeline_review_20260923.md": {
+      "destination": "docs/archive/reports/bowl_pipeline_review_20260923.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "e8a2b9748aa5cb48790f7343bccc2ea61c53b3e07672e30a50c26417aa6c9e51",
+      "bytes": 10246,
+      "archived_sha256": "e40761e548af8cfb305290835033aa01aab8c6163a2dec9d679605548a6f800f",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/collision_model_removal_20260923.md": {
+      "destination": "docs/archive/reports/collision_model_removal_20260923.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "2b088b824c7bcc6f3f26c9577b611c8787f402497e16e94a68c9b4d29101ec38",
+      "bytes": 5536,
+      "archived_sha256": "bf81a93667a0da5c331c40e2c3f7549c18bc0df322dceda88b952fef88b32082",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/debug_implementation_20260923.md": {
+      "destination": "docs/archive/reports/debug_implementation_20260923.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "268a69e0836868e3b2edf09b15a52f1f045e75d191b2480d43fd6d83410f9e88",
+      "bytes": 7435,
+      "archived_sha256": "85b42ba69e0c1713d72994f8f7575f10f9373a37c32fc2c5a9728ee28d4d42f0",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/demo_implementation_20260925.md": {
+      "destination": "docs/archive/reports/demo_implementation_20260925.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "d327f117585b0d411353534a6ae7b9e7dfdb18c7d46bd819298661994281cf8c",
+      "bytes": 13159,
+      "archived_sha256": "e43f9de44bbbe8473c2938c51389576390b4b95e3224f86b5a93773061224c7b",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/grasp_executor_第一版设计说明.md": {
+      "destination": "docs/archive/reports/grasp_executor_第一版设计说明.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "eee9c4e41aafb0d6b522444830bfeb5689cbddffb52d51174bcdca438260aa9e",
+      "bytes": 9777,
+      "archived_sha256": "5a6400a1da7a22d6115d2944415eed9009374717f2f4412d8fee4fea224c686a",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/live_demo_verification_20260927.md": {
+      "destination": "docs/archive/reports/live_demo_verification_20260927.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "7633b3750fa19ad69506388a55826a511d22cfd7db53e844b97ca4d1bb7f58b7",
+      "bytes": 8963,
+      "archived_sha256": "2021d73bfc1abddf2a8335fee0e3471975411772f2f660e6e43855eff0193de6",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/pipeline_validation_20260921.md": {
+      "destination": "docs/archive/reports/pipeline_validation_20260921.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "49f7479dbbca64412611aa0d6a010aa262e367ad3f0335b2c22d947de0499806",
+      "bytes": 6483,
+      "archived_sha256": "9df0ee5089ab69d0ca8cd1216b55760eac75857a224a0bac6e7c12b4cbe0d181",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/place_offline_debug_20260923.md": {
+      "destination": "docs/archive/reports/place_offline_debug_20260923.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "cfb702d1fc054cff2c992353a23fb4d17f4995fa31d5d80e8ce62c5d0ba4dfd7",
+      "bytes": 8400,
+      "archived_sha256": "e3ca58cef76b9b0e1a91e271ea06d1f1810d7bd1609cb614dd67c7550adc11d3",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/planning_diagnosis_20260923.md": {
+      "destination": "docs/archive/reports/planning_diagnosis_20260923.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "42a3ac27d521511978507f6bdcd170212df39e2c0e6dae8e50ae7f913caede30",
+      "bytes": 9006,
+      "archived_sha256": "9b740cdc7979132d0bce86a27a19bedc31e4f1467ee8fbbe9973a9a2d5e1f697",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/rim_locator_第一版设计说明.md": {
+      "destination": "docs/archive/reports/rim_locator_第一版设计说明.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "090c4a5c522e24423c5466896252a5d1060b4b4abaa07cdf2f37757fbd09672a",
+      "bytes": 8446,
+      "archived_sha256": "a9b6d63d5708de4776b59b27feb970dd50c5c2b01d6df9cb6651e42db27a814a",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/supported_rim_contacts_20260923.md": {
+      "destination": "docs/archive/reports/supported_rim_contacts_20260923.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "bacdf1b64d3b76983d0f62e6ec1070d9f5a9f82ce052460ea41d7b97e6bd6d56",
+      "bytes": 8090,
+      "archived_sha256": "7543d3a93abdf9f998567ea1df1ebc636e4428dc98b740087f53d59116a5de44",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/yolo_vision_第一版设计说明.md": {
+      "destination": "docs/archive/reports/yolo_vision_第一版设计说明.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "a5f5afce01b1ff09da33b3b84db6254b29a1f5f92d276af7b63bcecc5b97880c",
+      "bytes": 7791,
+      "archived_sha256": "3d6e8ed4cbb8330578677399177cc1e0efe98f3c3a2f9d7f75bfe62d4d38b25d",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/五点统一姿态_20260928_163826.md": {
+      "destination": "docs/archive/reports/五点统一姿态_20260928_163826.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "673e39fde37949a360d8d33b407f0f42137af71d858c76602a19bc55ec849ba1",
+      "bytes": 2553,
+      "archived_sha256": "142214be663154b2bd49d67e1eb358a9491a0d46efd0c9ef3a17e556479b9920",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/起始点姿态更新_20260928_164623.md": {
+      "destination": "docs/archive/reports/起始点姿态更新_20260928_164623.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "3e5e5db84914e20c63195cfc2444d967cf9fffec7b186ec9788d168b49c82b19",
+      "bytes": 2666,
+      "archived_sha256": "d163a3e91cc1bacecb7673a129aac62496839167c995aa310274a51807f23636",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/抓取成功率改进分析_20260925.md": {
+      "destination": "docs/archive/reports/抓取成功率改进分析_20260925.md",
+      "reason": "旧版设计、诊断、采集或阶段验证记录，不作为当前操作步骤",
+      "original_sha256": "f9814a5f2bc2dd1a3caad2a87c8143ed9c68aca5e584acc9845db9839c2949ae",
+      "bytes": 21857,
+      "archived_sha256": "5d7309c4c5be53a892348da98b7c4afa3f20599e655be5f55ee83a667e8418a6",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/0921/startup_scripts.md": {
+      "destination": "docs/archive/reports/0921/startup_scripts.md",
+      "reason": "旧版启动和验证记录，操作说明已由 docs/startup.md 替代",
+      "original_sha256": "7a4105402f0fa984e0486c3f7f83b18ee397ed39b2fcea888ca6d1307ec7b1cb",
+      "bytes": 14844,
+      "archived_sha256": "92e1dfbebdafe3b5d4df0298cb2a9bf9f8102ca78fbe5cd7787d601ede72717c",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/0921/moveit_grasp_test_report.md": {
+      "destination": "docs/archive/reports/0921/moveit_grasp_test_report.md",
+      "reason": "旧版启动和验证记录，操作说明已由 docs/startup.md 替代",
+      "original_sha256": "fdbe72a7e4267023223d91c37d9b7be5843f046c156bdf243839547db8501c25",
+      "bytes": 6606,
+      "archived_sha256": "00a4f363931ebc0baaae27b76c1823b9345d5f97a3fe23c01314b710346823d6",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/build/linux_build.md": {
+      "destination": "docs/archive/reports/build/linux_build.md",
+      "reason": "旧版部署及上机清单，保留原始版本并重写现行说明",
+      "original_sha256": "fdc1ca2d159845981eefff368175e7551278482a7bed2771fdac776a159f4f01",
+      "bytes": 5697,
+      "archived_sha256": "7617bf80e4e2fcbc161dd23c2d30efb22d29f2064f28a4972e4f4c7afc658ee5",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/build/robot_test_checklist.md": {
+      "destination": "docs/archive/reports/build/robot_test_checklist.md",
+      "reason": "旧版部署及上机清单，保留原始版本并重写现行说明",
+      "original_sha256": "67f93ee4cd0567f6dcbed08dba0f2a90b234b94a77630dc2351bbb3ef4b6f97a",
+      "bytes": 6132,
+      "archived_sha256": "43da5b7ad93623a77ab4b171a441b8f6828b15d2a180eae5730796ab3c9a687b",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/backups/home_orientation_20260928_164623/place_zones.json": {
+      "destination": "docs/archive/backups/home_orientation_20260928_164623/place_zones.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "70c77872db6b918a0633f7237b7149fd3ce3ca763fb73697a214c4af416ac304",
+      "bytes": 4497,
+      "archived_sha256": "70c77872db6b918a0633f7237b7149fd3ce3ca763fb73697a214c4af416ac304",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_lower_release_20260928_203434/place_zones.json": {
+      "destination": "docs/archive/backups/left_lower_release_20260928_203434/place_zones.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "5dd36f46e1440bba253333cc3f0670fb35c84aa42a897a1ea0e3c33ebfcf8555",
+      "bytes": 5225,
+      "archived_sha256": "5dd36f46e1440bba253333cc3f0670fb35c84aa42a897a1ea0e3c33ebfcf8555",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_lower_release_20260928_203434/test_place_rounds.py": {
+      "destination": "docs/archive/backups/left_lower_release_20260928_203434/test_place_rounds.py",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "0f957d5f13845598e7140dd736cd4435e9e53e0eef70e046148485253feb057e",
+      "bytes": 13010,
+      "archived_sha256": "0f957d5f13845598e7140dd736cd4435e9e53e0eef70e046148485253feb057e",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_lower_release_20260928_203434/当前放置点.md": {
+      "destination": "docs/archive/backups/left_lower_release_20260928_203434/当前放置点.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "9806eeaf75ea6db5c0d5e6a1e7dfe4be70da5f543d564ea4951f8c5b770f564d",
+      "bytes": 2767,
+      "archived_sha256": "9806eeaf75ea6db5c0d5e6a1e7dfe4be70da5f543d564ea4951f8c5b770f564d",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_lower_release_20260929_143829/place_zones.json": {
+      "destination": "docs/archive/backups/left_lower_release_20260929_143829/place_zones.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "b4409ae4b5ccdfe96ca23ef18b401a96ce12cd2d2563752b02d6c09d4543cbe8",
+      "bytes": 5223,
+      "archived_sha256": "b4409ae4b5ccdfe96ca23ef18b401a96ce12cd2d2563752b02d6c09d4543cbe8",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_lower_release_20260929_143829/test_place_rounds.py": {
+      "destination": "docs/archive/backups/left_lower_release_20260929_143829/test_place_rounds.py",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "c93c8145c6e3d60f196e35ea0cde51b4444b38177e2908112d130dd63e206ebe",
+      "bytes": 13021,
+      "archived_sha256": "c93c8145c6e3d60f196e35ea0cde51b4444b38177e2908112d130dd63e206ebe",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_lower_release_20260929_143829/当前放置点.md": {
+      "destination": "docs/archive/backups/left_lower_release_20260929_143829/当前放置点.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "2950423e6d8d5a1176c9472542b587f1aa228ef35121c3b1ae2c7a65ee549904",
+      "bytes": 3363,
+      "archived_sha256": "2950423e6d8d5a1176c9472542b587f1aa228ef35121c3b1ae2c7a65ee549904",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_upper_release_20260928_200015/place_zones.json": {
+      "destination": "docs/archive/backups/left_upper_release_20260928_200015/place_zones.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "3270cadfede6f1d61fe3158e05d97c1c3df63d34cc571efa1df12a388f8155b5",
+      "bytes": 5223,
+      "archived_sha256": "3270cadfede6f1d61fe3158e05d97c1c3df63d34cc571efa1df12a388f8155b5",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/left_upper_release_20260928_200015/当前放置点.md": {
+      "destination": "docs/archive/backups/left_upper_release_20260928_200015/当前放置点.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "fe6d73fc0ae5d45103e189d0aa1dd9ecbafcf03de8530417fc070ffb4662184e",
+      "bytes": 2330,
+      "archived_sha256": "fe6d73fc0ae5d45103e189d0aa1dd9ecbafcf03de8530417fc070ffb4662184e",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/place_orientation_20260928_163826/place_zones.json": {
+      "destination": "docs/archive/backups/place_orientation_20260928_163826/place_zones.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "c556067c85b49c322c755678705561989be0928a8f1d055865e69d8031867311",
+      "bytes": 4471,
+      "archived_sha256": "c556067c85b49c322c755678705561989be0928a8f1d055865e69d8031867311",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/place_orientation_20260928_163826/示教点记录.md": {
+      "destination": "docs/archive/backups/place_orientation_20260928_163826/示教点记录.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "3d22e323c7f52d05e94728fefede5c564b447d48d937d35cd9a51915dbaf21c6",
+      "bytes": 9555,
+      "archived_sha256": "3d22e323c7f52d05e94728fefede5c564b447d48d937d35cd9a51915dbaf21c6",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/New_run/README.md": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/New_run/README.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "679693b0369ffbcbf09b0021381209234f84469c6a49ecf26183e1a8a91d6b20",
+      "bytes": 10071,
+      "archived_sha256": "679693b0369ffbcbf09b0021381209234f84469c6a49ecf26183e1a8a91d6b20",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/docs/README.md": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/docs/README.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "da0fad70d64e56fad5513d2180f214af88e39ce55de64062b3363fba180ebcb3",
+      "bytes": 4772,
+      "archived_sha256": "da0fad70d64e56fad5513d2180f214af88e39ce55de64062b3363fba180ebcb3",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/docs/当前放置点.md": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/docs/当前放置点.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "5b6cc1927a9c9b3435379d2e227c372df0504e6a293ac9f1400bcb3707314415",
+      "bytes": 3775,
+      "archived_sha256": "5b6cc1927a9c9b3435379d2e227c372df0504e6a293ac9f1400bcb3707314415",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/run_pipeline_place_execute.sh": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/run_pipeline_place_execute.sh",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "9f3f0f37f269ae828765378b98eebb3f2d9b7a27f9cdc9a9b5c263f304a1d223",
+      "bytes": 1681,
+      "archived_sha256": "9f3f0f37f269ae828765378b98eebb3f2d9b7a27f9cdc9a9b5c263f304a1d223",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/run_pipeline_place_test.sh": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/run_pipeline_place_test.sh",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "9cbfddfedf7c5e7a79aef8a5f4c7ddc70b3673e998c905b6e9282ccf364add59",
+      "bytes": 2083,
+      "archived_sha256": "9cbfddfedf7c5e7a79aef8a5f4c7ddc70b3673e998c905b6e9282ccf364add59",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/src/grasp_executor/config/place_zones.json": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/src/grasp_executor/config/place_zones.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "586082cfef258842530ae18f4102bfbcdaec88c8631e6501a6dde472f16a2791",
+      "bytes": 5218,
+      "archived_sha256": "586082cfef258842530ae18f4102bfbcdaec88c8631e6501a6dde472f16a2791",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/tools/place_rounds.py": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/tools/place_rounds.py",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "e0d5d4912a2a0472c7073c9925383933d734b9e70957c1dd823f2a695d47bba2",
+      "bytes": 10417,
+      "archived_sha256": "e0d5d4912a2a0472c7073c9925383933d734b9e70957c1dd823f2a695d47bba2",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_before_down_22mm_20260929_143947/tools/test_place_rounds.py": {
+      "destination": "docs/archive/backups/release_points_before_down_22mm_20260929_143947/tools/test_place_rounds.py",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "e12082ebaee5dfb4dbbcbfe92d2c4f6fd282038510f7f1e8e8f3d278fbbd1594",
+      "bytes": 13095,
+      "archived_sha256": "e12082ebaee5dfb4dbbcbfe92d2c4f6fd282038510f7f1e8e8f3d278fbbd1594",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/README.md": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/README.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "90897c4b20c3c89456002c318db20622f653a1b40db82c6f2091348243b04d3c",
+      "bytes": 909,
+      "archived_sha256": "90897c4b20c3c89456002c318db20622f653a1b40db82c6f2091348243b04d3c",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/blue_release_position.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/blue_release_position.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "264d2788ea942f66a3c54fcc63e62c52c20f27b32a61bfc7f80c687da3c148bf",
+      "bytes": 1844,
+      "archived_sha256": "264d2788ea942f66a3c54fcc63e62c52c20f27b32a61bfc7f80c687da3c148bf",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/current_start_position.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/current_start_position.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "f0797dffaff0b230abebcea2d6c2407f1b0a1f5811d63df0534a9f6dea0f42f7",
+      "bytes": 1256,
+      "archived_sha256": "f0797dffaff0b230abebcea2d6c2407f1b0a1f5811d63df0534a9f6dea0f42f7",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/teach_capture_center_20260928_153251.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/teach_capture_center_20260928_153251.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "f68bd1a220f9e50ad8ebafb7e9e7348837fbae46c38f721e2469207c8550ba43",
+      "bytes": 5335,
+      "archived_sha256": "f68bd1a220f9e50ad8ebafb7e9e7348837fbae46c38f721e2469207c8550ba43",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/teach_capture_left_lower_release_20260928_current.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/teach_capture_left_lower_release_20260928_current.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "8d56d0dacc1022dbe6351ba4a0e96d5d5f456139d0c0936487891c5514138296",
+      "bytes": 1851,
+      "archived_sha256": "8d56d0dacc1022dbe6351ba4a0e96d5d5f456139d0c0936487891c5514138296",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/teach_capture_left_upper_release_20260928_current.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/teach_capture_left_upper_release_20260928_current.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "ce7946e600dd236b1a204cb7d6b8b9e15c4518af093014e3d512234af241eb8a",
+      "bytes": 1843,
+      "archived_sha256": "ce7946e600dd236b1a204cb7d6b8b9e15c4518af093014e3d512234af241eb8a",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/teach_capture_right_lower_20260928_191303.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/teach_capture_right_lower_20260928_191303.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "6f1dc53e5ca958e147df6451e409c0581ef77502cf1f3f00256512d5f379d45d",
+      "bytes": 1846,
+      "archived_sha256": "6f1dc53e5ca958e147df6451e409c0581ef77502cf1f3f00256512d5f379d45d",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/teach_capture_right_upper_20260928_171849.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/teach_capture_right_upper_20260928_171849.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "f3dccf12f7e37d92066de43d1bd12c4720832d08efbf9ec0e2982faf1023c7df",
+      "bytes": 1454,
+      "archived_sha256": "f3dccf12f7e37d92066de43d1bd12c4720832d08efbf9ec0e2982faf1023c7df",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/docs/当前放置点.md": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/docs/当前放置点.md",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "8a350e9776bc4f6f44d8d1732541049091055845195c0c4904c3ef67689bb97b",
+      "bytes": 3201,
+      "archived_sha256": "8a350e9776bc4f6f44d8d1732541049091055845195c0c4904c3ef67689bb97b",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/manifest.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/manifest.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "20abfe02cc9a165872e2a3cbab2bd9495a2371185512963cdc0c9de1744f44be",
+      "bytes": 4586,
+      "archived_sha256": "20abfe02cc9a165872e2a3cbab2bd9495a2371185512963cdc0c9de1744f44be",
+      "content_adjustment": "原样保留"
+    },
+    "docs/backups/release_points_current_20260929_143457/src/grasp_executor/config/place_zones.json": {
+      "destination": "docs/archive/backups/release_points_current_20260929_143457/src/grasp_executor/config/place_zones.json",
+      "reason": "原始备份快照，保持内容及内部 manifest 不变",
+      "original_sha256": "756c1050d20e8904208253076f9915808f7c013aa3de25323aee31d4279c3d03",
+      "bytes": 5228,
+      "archived_sha256": "756c1050d20e8904208253076f9915808f7c013aa3de25323aee31d4279c3d03",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_right_lower_release_20260929_143541.json": {
+      "destination": "docs/records/teach_capture_right_lower_release_20260929_143541.json",
+      "reason": "当前示教及起点来源记录，保持原始采集数据",
+      "original_sha256": "0483e1fa9a5bca9e40de6d50038bb4d91a4f07a2ba76a99e4fc872ce61e7140a",
+      "bytes": 1834,
+      "archived_sha256": "0483e1fa9a5bca9e40de6d50038bb4d91a4f07a2ba76a99e4fc872ce61e7140a",
+      "content_adjustment": "原样保留"
+    },
+    "docs/start_position_capture_20260928_154558.json": {
+      "destination": "docs/archive/teaching/start_position_capture_20260928_154558.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "04f0083cb2b338bdadf89d33025dc5c014b7c824399b3cc29d7b42b8dbfed64a",
+      "bytes": 1747,
+      "archived_sha256": "04f0083cb2b338bdadf89d33025dc5c014b7c824399b3cc29d7b42b8dbfed64a",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_20260928_152557.json": {
+      "destination": "docs/archive/teaching/teach_capture_20260928_152557.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "cb56147b7b16016c661b1b45e67f3550b74cb21d4908f532aec62f9f154badba",
+      "bytes": 5339,
+      "archived_sha256": "cb56147b7b16016c661b1b45e67f3550b74cb21d4908f532aec62f9f154badba",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_left_upper_release_20260928_current.json": {
+      "destination": "docs/records/teach_capture_left_upper_release_20260928_current.json",
+      "reason": "当前示教及起点来源记录，保持原始采集数据",
+      "original_sha256": "ce7946e600dd236b1a204cb7d6b8b9e15c4518af093014e3d512234af241eb8a",
+      "bytes": 1843,
+      "archived_sha256": "ce7946e600dd236b1a204cb7d6b8b9e15c4518af093014e3d512234af241eb8a",
+      "content_adjustment": "原样保留"
+    },
+    "docs/home_orientation_execute_20260928_164707.json": {
+      "destination": "docs/archive/teaching/home_orientation_execute_20260928_164707.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "92ecb9899ce569e6c8da9d74e8e6cee2f9693cbfd4c0ded78314889edc1710de",
+      "bytes": 945,
+      "archived_sha256": "92ecb9899ce569e6c8da9d74e8e6cee2f9693cbfd4c0ded78314889edc1710de",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_right_upper_20260928_171849.json": {
+      "destination": "docs/records/teach_capture_right_upper_20260928_171849.json",
+      "reason": "当前示教及起点来源记录，保持原始采集数据",
+      "original_sha256": "f3dccf12f7e37d92066de43d1bd12c4720832d08efbf9ec0e2982faf1023c7df",
+      "bytes": 1454,
+      "archived_sha256": "f3dccf12f7e37d92066de43d1bd12c4720832d08efbf9ec0e2982faf1023c7df",
+      "content_adjustment": "原样保留"
+    },
+    "docs/home_orientation_execute_20260928_164941.json": {
+      "destination": "docs/archive/teaching/home_orientation_execute_20260928_164941.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "ecce4d357f7e8b016a3c2b809e0ba3b276fe750dc304a9a5e45eaad1461241d7",
+      "bytes": 1436,
+      "archived_sha256": "ecce4d357f7e8b016a3c2b809e0ba3b276fe750dc304a9a5e45eaad1461241d7",
+      "content_adjustment": "原样保留"
+    },
+    "docs/home_orientation_execute_20260928_172621.json": {
+      "destination": "docs/archive/teaching/home_orientation_execute_20260928_172621.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "d90c9364a40f964acb2e2fb784242aa40b27bde76d21c4d787e61378ca9a3b81",
+      "bytes": 1431,
+      "archived_sha256": "d90c9364a40f964acb2e2fb784242aa40b27bde76d21c4d787e61378ca9a3b81",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_left_lower_release_20260929_143829.json": {
+      "destination": "docs/records/teach_capture_left_lower_release_20260929_143829.json",
+      "reason": "当前示教及起点来源记录，保持原始采集数据",
+      "original_sha256": "cc23b387c48b7ea9d3bbac0169ae45c8d2e415da4dc9a5bff17ccfbe11a42d96",
+      "bytes": 1839,
+      "archived_sha256": "cc23b387c48b7ea9d3bbac0169ae45c8d2e415da4dc9a5bff17ccfbe11a42d96",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_right_lower_20260928_191303.json": {
+      "destination": "docs/archive/teaching/teach_capture_right_lower_20260928_191303.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "6f1dc53e5ca958e147df6451e409c0581ef77502cf1f3f00256512d5f379d45d",
+      "bytes": 1846,
+      "archived_sha256": "6f1dc53e5ca958e147df6451e409c0581ef77502cf1f3f00256512d5f379d45d",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_left_lower_20260928_153517.json": {
+      "destination": "docs/archive/teaching/teach_capture_left_lower_20260928_153517.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "9aad87c7264f9d8bff997ac0cd0f1b11430266f30d16bf25065cee77c36ea114",
+      "bytes": 5336,
+      "archived_sha256": "9aad87c7264f9d8bff997ac0cd0f1b11430266f30d16bf25065cee77c36ea114",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_20260928_152456.json": {
+      "destination": "docs/archive/teaching/teach_capture_20260928_152456.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "fe68a33f2823eb771e20a23a8ac65ef58add9c92827887a415526a0b1107c5e5",
+      "bytes": 5282,
+      "archived_sha256": "fe68a33f2823eb771e20a23a8ac65ef58add9c92827887a415526a0b1107c5e5",
+      "content_adjustment": "原样保留"
+    },
+    "docs/left_lower_release_update.json": {
+      "destination": "docs/archive/teaching/left_lower_release_update.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "289bb33ce0f0f057a1fad4a8ae6064a9f2b6f28010f1b70e14236bb94bb65eb9",
+      "bytes": 1843,
+      "archived_sha256": "289bb33ce0f0f057a1fad4a8ae6064a9f2b6f28010f1b70e14236bb94bb65eb9",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_left_upper_20260928_153732.json": {
+      "destination": "docs/archive/teaching/teach_capture_left_upper_20260928_153732.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "9c5a1f3b1f1f2d2b97a5c4d510ea285353c652f20d2e2cb8e34da8605e395565",
+      "bytes": 5336,
+      "archived_sha256": "9c5a1f3b1f1f2d2b97a5c4d510ea285353c652f20d2e2cb8e34da8605e395565",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_left_lower_release_20260928_current.json": {
+      "destination": "docs/archive/teaching/teach_capture_left_lower_release_20260928_current.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "8d56d0dacc1022dbe6351ba4a0e96d5d5f456139d0c0936487891c5514138296",
+      "bytes": 1851,
+      "archived_sha256": "8d56d0dacc1022dbe6351ba4a0e96d5d5f456139d0c0936487891c5514138296",
+      "content_adjustment": "原样保留"
+    },
+    "docs/home_orientation_execute_20260928_172604.json": {
+      "destination": "docs/archive/teaching/home_orientation_execute_20260928_172604.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "332ef9964e2e856831ef4ac943c7a30771e436974eb8eacdccb8d3c5a8460b92",
+      "bytes": 293,
+      "archived_sha256": "332ef9964e2e856831ef4ac943c7a30771e436974eb8eacdccb8d3c5a8460b92",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_center_20260928_153251.json": {
+      "destination": "docs/records/teach_capture_center_20260928_153251.json",
+      "reason": "当前示教及起点来源记录，保持原始采集数据",
+      "original_sha256": "f68bd1a220f9e50ad8ebafb7e9e7348837fbae46c38f721e2469207c8550ba43",
+      "bytes": 5335,
+      "archived_sha256": "f68bd1a220f9e50ad8ebafb7e9e7348837fbae46c38f721e2469207c8550ba43",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_right_upper_20260928_153056.json": {
+      "destination": "docs/archive/teaching/teach_capture_right_upper_20260928_153056.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "d8cc73334ccbcce620b5957b6f87b67eb4d9122382e9c0019a00a26391e19611",
+      "bytes": 5335,
+      "archived_sha256": "d8cc73334ccbcce620b5957b6f87b67eb4d9122382e9c0019a00a26391e19611",
+      "content_adjustment": "原样保留"
+    },
+    "docs/place_orientation_capture_20260928_163826.json": {
+      "destination": "docs/archive/teaching/place_orientation_capture_20260928_163826.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "86a11b614679490d85eb99c50941345ae0b16eb366ef2bd0f6afa215f1f2c6df",
+      "bytes": 6707,
+      "archived_sha256": "86a11b614679490d85eb99c50941345ae0b16eb366ef2bd0f6afa215f1f2c6df",
+      "content_adjustment": "原样保留"
+    },
+    "docs/home_orientation_update_20260928_164623.json": {
+      "destination": "docs/archive/teaching/home_orientation_update_20260928_164623.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "b8774ff13666597f3cf2b586b5cbbcfb2a26568977919ea914f08642516a66f6",
+      "bytes": 1873,
+      "archived_sha256": "b8774ff13666597f3cf2b586b5cbbcfb2a26568977919ea914f08642516a66f6",
+      "content_adjustment": "原样保留"
+    },
+    "docs/current_start_position.json": {
+      "destination": "docs/records/current_start_position.json",
+      "reason": "当前示教及起点来源记录，保持原始采集数据",
+      "original_sha256": "f0797dffaff0b230abebcea2d6c2407f1b0a1f5811d63df0534a9f6dea0f42f7",
+      "bytes": 1256,
+      "archived_sha256": "f0797dffaff0b230abebcea2d6c2407f1b0a1f5811d63df0534a9f6dea0f42f7",
+      "content_adjustment": "原样保留"
+    },
+    "docs/blue_release_position.json": {
+      "destination": "docs/records/blue_release_position.json",
+      "reason": "当前示教及起点来源记录，保持原始采集数据",
+      "original_sha256": "264d2788ea942f66a3c54fcc63e62c52c20f27b32a61bfc7f80c687da3c148bf",
+      "bytes": 1844,
+      "archived_sha256": "264d2788ea942f66a3c54fcc63e62c52c20f27b32a61bfc7f80c687da3c148bf",
+      "content_adjustment": "原样保留"
+    },
+    "docs/teach_capture_left_lower_20260928_172409.json": {
+      "destination": "docs/archive/teaching/teach_capture_left_lower_20260928_172409.json",
+      "reason": "已被后续示教替代的采集或执行记录，保持原始数据",
+      "original_sha256": "1f5b5d66c7fa88e121fd445fad286c21c14b6c409b2224278ec26a768d91b662",
+      "bytes": 1450,
+      "archived_sha256": "1f5b5d66c7fa88e121fd445fad286c21c14b6c409b2224278ec26a768d91b662",
+      "content_adjustment": "原样保留"
+    },
+    "docs/示教点记录.md": {
+      "destination": "docs/archive/teaching/示教点记录.md",
+      "reason": "早期示教值与当前六点配置不同，保留为原始记录",
+      "original_sha256": "ae0ce0481c4c3829985d2197ac1b740b37c88af0e3273ed14fca48f5a6230d25",
+      "bytes": 10276,
+      "archived_sha256": "534d4e8298677b5795fbdfcc9c83e68a129d5ed93a854d8924bb82ec8d1be098",
+      "content_adjustment": "历史文档标识及相对链接修订"
+    },
+    "docs/left_finger_positive_y_rviz_20260928.png": {
+      "destination": "docs/assets/left_finger_positive_y_rviz_20260928.png",
+      "reason": "当前手指方向与坐标轴确认依据",
+      "original_sha256": "5deb8495289ea652d9f637a191e1e5b397a358343029923ba52262cbc85470db",
+      "bytes": 438176,
+      "archived_sha256": "5deb8495289ea652d9f637a191e1e5b397a358343029923ba52262cbc85470db",
+      "content_adjustment": "原样保留"
+    },
+    "docs/left_finger_reference_20260928.jpeg": {
+      "destination": "docs/assets/left_finger_reference_20260928.jpeg",
+      "reason": "当前手指方向与坐标轴确认依据",
+      "original_sha256": "975a7da85131859d57e4bfdd5b67d716709c944c1433ef9516155aba8d3be5f9",
+      "bytes": 754646,
+      "archived_sha256": "975a7da85131859d57e4bfdd5b67d716709c944c1433ef9516155aba8d3be5f9",
+      "content_adjustment": "原样保留"
+    }
+  }
+}

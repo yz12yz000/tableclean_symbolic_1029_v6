@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-09-28T16:47:08.237348+08:00",
+  "mode": "execute",
+  "motion_sent": true,
+  "gripper_commands_sent": false,
+  "planned_duration_s": 109.854775223,
+  "target_home": {
+    "joint_positions": {
+      "shoulder_pan_joint": 5.451547619527356,
+      "shoulder_lift_joint": -1.7075447800572705,
+      "elbow_joint": -1.8745606268041277,
+      "wrist_1_joint": -1.1342545478124648,
+      "wrist_2_joint": 1.5727257690771905,
+      "wrist_3_joint": 3.8674022340191803
+    },
+    "position": {
+      "x": -0.27934854570848133,
+      "y": 0.46800006176185127,
+      "z": 0.14980709004048134
+    },
+    "orientation": {
+      "x": 0.0066725690368611935,
+      "y": -0.9999753016867546,
+      "z": 0.0021213644616696775,
+      "w": -0.000610452089074153
+    }
+  },
+  "passed": false,
+  "error": "cancelled",
+  "stop_error": "controller_deactivated_but_action_cancel_unconfirmed",
+  "finished_at": "2026-09-28T16:48:47.658309+08:00"
+}

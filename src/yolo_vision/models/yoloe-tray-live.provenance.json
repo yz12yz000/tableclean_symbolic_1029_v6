@@ -1,0 +1,6 @@
+{
+  "model_type": "YOLOE-26s segmentation with frozen visual prompt",
+  "scope": "Recorded patterned rectangular tray in this camera setup; not a general tray model",
+  "source_artifact": "debug_output/clear_table_live/20261010_pCnsvN/models/yoloe-tray-s-occupied.pt",
+  "sha256": "af44515a096446b43a629c1fdc1bd3e3248735ff42b525c7f94b6a2004d61ae8"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "image": "images/gray_table.jpeg",
+  "image_size": [
+    1280,
+    800
+  ],
+  "objects": [
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        574,
+        394,
+        650,
+        465
+      ]
+    },
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        757,
+        401,
+        857,
+        479
+      ]
+    },
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        824,
+        486,
+        881,
+        537
+      ]
+    },
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        743,
+        484,
+        798,
+        540
+      ]
+    },
+    {
+      "class_id": 1,
+      "bbox_xyxy": [
+        350,
+        392,
+        582,
+        532
+      ]
+    }
+  ]
+}

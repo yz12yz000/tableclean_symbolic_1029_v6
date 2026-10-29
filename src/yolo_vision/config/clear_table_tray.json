@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "calibrated": false,
+  "motion_approved": false,
+  "calibration_note": "SAMPLE ONLY: supply a YOLO segmentation model with the tray class; measure outer long/short dimensions and concentric usable interior, slots, bowl clearance, source polygon and release offset. Validate original release height before setting calibrated=true. uv is metres from tray centre; +u follows the detected long axis. Use one rectangular tray with distinct side lengths and gradual movement between observations.",
+  "frame_id": "base",
+  "detector": "yolo",
+  "tray_size": [
+    0.6,
+    0.44
+  ],
+  "slots": [
+    {
+      "id": "A",
+      "uv": [
+        -0.16,
+        -0.1
+      ]
+    },
+    {
+      "id": "B",
+      "uv": [
+        0.16,
+        -0.1
+      ]
+    },
+    {
+      "id": "C",
+      "uv": [
+        -0.16,
+        0.1
+      ]
+    },
+    {
+      "id": "D",
+      "uv": [
+        0.16,
+        0.1
+      ]
+    }
+  ],
+  "bowl_radius": 0.06,
+  "edge_margin": 0.02,
+  "clearance": 0.025,
+  "position_tolerance": 0.015,
+  "depth_xy_tolerance": 0.006,
+  "refine_boundary": false,
+  "known_bowl_radii": [],
+  "compensate_bowl_xy": false,
+  "release_z": null,
+  "release_xy_offset": [
+    0.0,
+    0.0
+  ],
+  "source_polygon": null,
+  "empty_confirmations": 2,
+  "yolo": {
+    "model_path": "models/tray-seg.pt",
+    "target_class": "tray",
+    "confidence": 0.5,
+    "imgsz": 640,
+    "device": "cpu"
+  },
+  "tray_outer_size": [
+    0.64,
+    0.48
+  ]
+}

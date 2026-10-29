@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-09-28T16:46:23.463826+08:00",
+  "mode": "update",
+  "motion_sent": false,
+  "gripper_commands_sent": false,
+  "backup": "/home/rob/robot_grasp_0929demo/docs/backups/home_orientation_20260928_164623/place_zones.json",
+  "base_tool0_position": [
+    0.24654489701648968,
+    -0.46805556669190046,
+    0.31630208340331595
+  ],
+  "base_tool0_quaternion": [
+    -0.9999753016867546,
+    -0.006672569036861255,
+    0.0006104520890741532,
+    0.0021213644616696775
+  ],
+  "old_return_home": {
+    "joint_positions": {
+      "shoulder_lift_joint": -1.7071100674071253,
+      "elbow_joint": -1.877764344215393,
+      "wrist_1_joint": -1.1219877165606995,
+      "wrist_2_joint": 1.5842771530151367,
+      "wrist_3_joint": 3.8145370483398438,
+      "shoulder_pan_joint": 5.449301242828369
+    },
+    "position": {
+      "x": -0.2818237412796973,
+      "y": 0.4662069785145234,
+      "z": 0.15032422002268914
+    },
+    "orientation": {
+      "x": -0.03199624952094808,
+      "y": 0.9994614408392446,
+      "z": -0.0022628630822860533,
+      "w": -0.006924430865075477
+    }
+  },
+  "new_return_home": {
+    "joint_positions": {
+      "shoulder_pan_joint": 5.451547619527356,
+      "shoulder_lift_joint": -1.7075447800572705,
+      "elbow_joint": -1.8745606268041277,
+      "wrist_1_joint": -1.1342545478124648,
+      "wrist_2_joint": 1.5727257690771905,
+      "wrist_3_joint": 3.8674022340191803
+    },
+    "position": {
+      "x": -0.27934854570848133,
+      "y": 0.46800006176185127,
+      "z": 0.14980709004048134
+    },
+    "orientation": {
+      "x": 0.0066725690368611935,
+      "y": -0.9999753016867546,
+      "z": 0.0021213644616696775,
+      "w": -0.000610452089074153
+    }
+  },
+  "max_joint_change_from_old_home_rad": 0.05286518567933651,
+  "planned_duration_s": 109.855858584,
+  "passed": true,
+  "finished_at": "2026-09-28T16:46:30.731237+08:00"
+}

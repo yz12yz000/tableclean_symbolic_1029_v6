@@ -1,0 +1,113 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Splitter Ratio: 0.76
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid (arm base height)
+      Enabled: false
+      Cell Size: 0.1
+      Plane Cell Count: 30
+      Alpha: 0.25
+      Color: 120; 130; 145
+      Reference Frame: <Fixed Frame>
+    - Class: rviz_default_plugins/RobotModel
+      Name: Current robot
+      Enabled: true
+      Alpha: 1
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+      Visual Enabled: true
+      Collision Enabled: false
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Arm - Workspace Boundary
+      Enabled: true
+      Topic:
+        Value: /ur5e_workspace/arm_boundary
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Queue Size: 5
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Gripper - Workspace Boundary
+      Enabled: true
+      Topic:
+        Value: /ur5e_workspace/gripper_boundary
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Queue Size: 5
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Arm - Original Points
+      Enabled: false
+      Topic:
+        Value: /ur5e_workspace/arm_points
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Queue Size: 5
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Gripper - Original Points
+      Enabled: false
+      Topic:
+        Value: /ur5e_workspace/gripper_points
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Queue Size: 5
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Ground Plane (wheel contact)
+      Enabled: true
+      Topic:
+        Value: /ur5e_workspace/ground_plane
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Queue Size: 5
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Ground - Gripper Section
+      Enabled: true
+      Topic:
+        Value: /ur5e_workspace/ground_section
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Queue Size: 5
+  Global Options:
+    Background Color: 27; 32; 40
+    Fixed Frame: base_link
+    Frame Rate: 20
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 4.2
+      Pitch: 0.65
+      Yaw: 0.7
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: -0.05
+      Target Frame: <Fixed Frame>
+Window Geometry:
+  Width: 1200
+  Height: 900

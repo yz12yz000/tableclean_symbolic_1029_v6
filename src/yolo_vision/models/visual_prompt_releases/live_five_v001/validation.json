@@ -1,0 +1,11 @@
+{
+  "reference_only": true,
+  "detected_counts": {
+    "bowl": 5,
+    "tray": 2,
+    "cup": 1,
+    "plate": 2,
+    "spoon": 1
+  },
+  "hardware_motion": false
+}

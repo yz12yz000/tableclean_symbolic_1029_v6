@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/table-task-plan-v1.schema.json",
+  "title": "GAT table task policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "plan_id",
+    "task_type",
+    "selector",
+    "priority",
+    "limits",
+    "mode",
+    "runner_protocol_version",
+    "workspace_revision",
+    "model"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "plan_id": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "task_type": {"const": "clear_table"},
+    "selector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {"const": "all_bowls"},
+        "attributes": {"type": "object", "maxProperties": 0}
+      }
+    },
+    "priority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "regions"],
+      "properties": {
+        "order": {"enum": ["largest_first", "distance_first"]},
+        "regions": {"const": []}
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_observation_rounds", "max_replans", "deadline_s"],
+      "properties": {
+        "max_observation_rounds": {"type": "integer", "minimum": 1, "maximum": 10000},
+        "max_replans": {"type": "integer", "minimum": 1, "maximum": 10000},
+        "deadline_s": {"type": "number", "exclusiveMinimum": 0, "maximum": 86400},
+        "max_reobservations": {"type": "integer", "minimum": 0, "maximum": 10000},
+        "max_completed_objects": {"type": "integer", "minimum": 1, "maximum": 10000}
+      }
+    },
+    "mode": {"enum": ["preview", "execute"]},
+    "runner_protocol_version": {"const": "table-runner-v1"},
+    "workspace_revision": {"type": "string", "pattern": "^[^/\\\\\\s]+$", "minLength": 1, "maxLength": 256},
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "model", "plan_hash"],
+      "properties": {
+        "provider": {"type": "string", "minLength": 1, "maxLength": 128},
+        "model": {"type": "string", "minLength": 1, "maxLength": 128},
+        "plan_hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"}
+      }
+    },
+    "reason": {"type": "string", "maxLength": 256}
+  }
+}

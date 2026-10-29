@@ -1,0 +1,35 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "gat-table",
+  "disabled_providers": [
+    "qwen-local"
+  ],
+  "agent": {
+    "gat-arm": {
+      "description": "Local single-bowl arm planner using the existing table_clean_ws runner.",
+      "mode": "primary",
+      "steps": 30,
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "question": "allow"
+      }
+    },
+    "gat-table": {
+      "description": "逐轮看图收桌面；Agent选物体和空位，本地symbolic model规划抓取与路径",
+      "mode": "primary",
+      "steps": 200,
+      "temperature": 0.2,
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "question": "allow"
+      }
+    }
+  },
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "question": "allow"
+  }
+}

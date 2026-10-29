@@ -1,0 +1,9 @@
+{
+  "inference_roi": [
+    220,
+    300,
+    1000,
+    700
+  ],
+  "inference_tile_size": 512
+}

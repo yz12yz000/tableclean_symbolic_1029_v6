@@ -1,0 +1,34 @@
+# ROS 2 / colcon generated files
+build/
+install/
+log/
+
+# Runtime and debug artifacts
+debug_output/
+
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Local archives
+src.zip
+
+# Keep the public source snapshot focused on code and the active model.
+.agent_tasks/
+6_GAT_Edu/
+output/
+image/
+gat_local_new/reports/
+gat_local_new/.opencode/node_modules/
+gat_local_new/generated/table/*/
+src/yolo_vision/models/yolo26_backups/
+src/yolo_vision/models/visual_prompt_releases/*/
+!src/yolo_vision/models/visual_prompt_releases/live_five_v001/
+原来的sh/

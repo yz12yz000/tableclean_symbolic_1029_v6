@@ -1,0 +1,55 @@
+# Driver destination 3 verified by CRC-valid complete GPP state on 2026-10-28.
+# Must pass CRC-validated GPP Check before any movement; no physical ID write.
+hand_control_node:
+  ros__parameters:
+    # Serial settings
+    port_name: "/dev/ttyUSB0"
+    baudrate: 115200
+    timeout_ms: 50
+    loop_hz: 100.0
+
+    # Startup ID query. The original ROS1 code sends a broadcast ID query at startup.
+    startup_ping: true
+    startup_ping_broadcast: true
+    device_id: 3
+    print_raw_packets: true
+
+    # Control table addresses copied from the original protocol.h.
+    # GridAddress_ID             6
+    # GridAddress_Enable         39
+    # GridAddress_Control        41
+    # GridLEDMode                40
+    # GridHomingOffset           20
+    # GridPresentPosition        56
+    # GridPresentCurrent         58
+    id_address: 6
+    enable_address: 39
+    control_address: 41
+    led_address: 40
+    homing_offset_address: 20
+    present_position_address: 56
+    present_current_address: 58
+
+    # Read/write byte lengths copied from the ROS1 sending logic.
+    # GID: read 4 bytes from ID address.
+    # SID/SHO: write 2-byte values.
+    # Open/Close/Enable/Disable/LED: write 1-byte values.
+    id_read_length: 4
+    id_write_length: 2
+    enable_write_length: 1
+    control_write_length: 1
+    led_write_length: 1
+    homing_offset_read_length: 2
+    homing_offset_write_length: 2
+    present_current_read_length: 2
+    present_position_read_length: 2
+
+    # Original ROS1 compatibility mode. For GPC/GPP/GHO, the ROS1 code reads
+    # address 0 with length 62, then extracts values from the returned register block.
+    use_state_block_read: true
+    state_block_start_address: 0
+    state_block_read_length: 62
+
+    # Keep the original ROS1 logic: Open writes 0, Close writes 1.
+    open_value: 0
+    close_value: 1

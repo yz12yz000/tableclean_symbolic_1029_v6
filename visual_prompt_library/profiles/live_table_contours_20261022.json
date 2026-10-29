@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "annotation": "annotations/live_table_contours_20261022.json",
+  "classes": [
+    "bowl",
+    "tray",
+    "cup",
+    "plate",
+    "knife",
+    "fork",
+    "spoon"
+  ],
+  "inference_roi": [
+    220,
+    300,
+    1000,
+    700
+  ],
+  "imgsz": 960
+}

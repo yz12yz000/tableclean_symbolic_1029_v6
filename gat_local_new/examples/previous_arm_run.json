@@ -1,0 +1,84 @@
+{
+  "robot": {
+    "ssh_user": "rob",
+    "ssh_host": "192.168.0.13",
+    "remote_program": "/home/rob/robot_grasp_0929demo/run_pipeline_place_execute.sh"
+  },
+  "original_task": "把碗放到右上角",
+  "source_of_truth": {
+    "arm_config": "config/robots/arm.yaml",
+    "place_zones": "config/robots/arm_place_zones.yaml",
+    "skill": ".opencode/skills/gat-arm-deployment/SKILL.md"
+  },
+  "placement_resolution": {
+    "requested_position": "右上角",
+    "resolved_position": "右上",
+    "resolution_method": "direct_zone_lookup",
+    "coordinate_frame": "base",
+    "target_kind": "downward_preparation_point",
+    "target_xyz": {
+      "x": -0.829509,
+      "y": 0.055705,
+      "z": 0.18284
+    }
+  },
+  "local_checks": {
+    "py_compile_command": "python -m py_compile generated/arm/arm_task.py",
+    "py_compile_status": "passed"
+  },
+  "deployment": {
+    "confirmation": "confirmed",
+    "program_command": "bash /home/rob/robot_grasp_0929demo/run_pipeline_place_execute.sh --x -0.829509 --y 0.055705 --z 0.182840",
+    "ssh_command": "ssh -tt rob@192.168.0.13 \"bash -lic 'bash /home/rob/robot_grasp_0929demo/run_pipeline_place_execute.sh --x -0.829509 --y 0.055705 --z 0.182840'\"",
+    "remote_exit_code": 0,
+    "remote_status": "success",
+    "remote_output": [
+      "单碗单次抓放，目标：{'x': -0.829509, 'y': 0.055705, 'z': 0.18284} 取物 ROI: [220, 300, 1000, 700]",
+      "rim_locator {\"status\": \"waiting_input\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\"}",
+      "yolo_vision {\"status\": \"ready\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_not_before_ns\": 1790667827410253408}",
+      "yolo_vision {\"status\": \"processing\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_not_before_ns\": 1790667827410253408}",
+      "yolo_vision {\"status\": \"success\", \"detected_count\": 1, \"object_count\": 1, \"objects\": [{\"object_id\": 0, \"point_count\": 4503, \"confidence\": 0.6788976788520813, \"mask_pixels\": 4503, \"valid_depth_points\": 4503, \"valid_depth_ratio\": 1.0}], \"class_name\": \"bowl\", \"rejected\": [], \"camera_projection\": {\"model\": \"rectified_pinhole\", \"origin\": \"camera_info\", \"width\": 1280, \"height\": 800, \"k\": [614.7130737304688, 0.0, 636.3009033203125, 0.0, 614.8883056640625, 397.95623779296875, 0.0, 0.0, 1.0], \"frame_id\": \"camera_color_optical_frame\", \"source_stamp_ns\": 1790667831086306048, \"image_stamp_ns\": 1790667831021938944}, \"source_stamp_ns\": 1790667831086306048, \"rgb_depth_delta_s\": 0.064367104, \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_not_before_ns\": 1790667827410253408}",
+      "rim_locator {\"status\": \"success\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"objects\": [{\"object_id\": 0, \"distance\": 0.4885218828153553, \"xyz\": [0.2405432259779994, 0.4251971147897841, -0.01451677645792021], \"rpy\": [3.141592653589793, -0.0, -0.5337085389199274], \"candidate_count\": 792, \"grasp_candidate_count\": 7, \"local_count\": 80, \"geometry\": {\"wall_radius\": 0.0125, \"wall_count\": 103, \"wall_span\": 0.020260741916553308, \"wall_residual\": 0.0006207875929389944, \"anchor_plane_distance\": 0.0019488845160155243, \"wall_tilt_deg\": 4.810126307570294, \"corroborating_radius\": 0.018750000000000003, \"corroborating_count\": 158, \"normal_change_deg\": 0.7549806368895492, \"searched_contacts\": 1, \"rejected_neighborhoods\": {}, \"method\": \"supported_wall_circle_radial\", \"circle_center_xy\": [0.27615421692196807, 0.48546182091003937], \"circle_radius\": 0.06897676071981845, \"circle_residual\": 0.0022175816513940847, \"circle_coverage_deg\": 222.64288844430698, \"circle_inlier_ratio\": 0.400390625, \"circle_inlier_count\": 205, \"circle_sector_count\": 6, \"circle_min_coverage_deg\": 120.0, \"circle_min_sector_count\": 4, \"circle_input_count\": 792, \"circle_sample_count\": 512, \"measured_wall_normal\": [-0.47060672164086204, -0.8783494902415355, 0.08385395958971834], \"radial_wall_deviation_deg\": 2.397496443898055, \"radial_contact_error\": 0.001023078421226356, \"outside_finger_axis\": \"positive_y\", \"tool_tilt_deg\": 0.0}}], \"rejected\": [], \"cloud_transform\": {\"source_frame\": \"camera_color_optical_frame\", \"target_frame\": \"base_link\", \"translation\": [0.17858988937044337, -0.4382847809591247, 0.9676738807420829], \"rotation\": [0.8747896754380383, -0.31018570841352633, 0.11822028110499652, -0.3529189923742641], \"source_stamp_ns\": 1790667831086306048}, \"ordered_object_ids\": [0]}",
+      "grasp_executor {\"status\": \"waiting_target\", \"plan_only\": false, \"max_target_age\": 600.0, \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"backend\": \"moveit\"}",
+      "grasp_executor {\"status\": \"validating\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"planning_candidate\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": false, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"moving_to_approach\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"opening_gripper\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"moving_to_grasp\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"closing_gripper\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"lifting_after_grasp\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"moving_to_place_ready\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"moving_to_place\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"holding_before_release\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"releasing_gripper\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"retreating_from_place\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"returning_home\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_count\": 1, \"object_id\": 0, \"candidate_id\": 0, \"candidate_attempt_count\": 1, \"completed_count\": 0, \"candidate_failures\": [], \"command_attempted\": true, \"backend\": \"moveit\", \"plan_only\": false}",
+      "grasp_executor {\"status\": \"success\", \"task_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a\", \"observation_id\": \"fc4eda816c7b4880a6b54fc9d46e2d2a/round_0001\", \"source_stamp_ns\": 1790667831086306048, \"object_id\": 0, \"candidate_id\": 0, \"object_count\": 1, \"completed_count\": 1, \"candidate_attempt_count\": 1, \"candidate_failures\": [], \"command_attempted\": true, \"failed_step\": \"\", \"reason\": \"\", \"stop_error\": \"\", \"backend\": \"moveit\", \"plan_only\": false, \"grasp_verified\": false, \"placement_verified\": false, \"gripper_feedback\": \"target_state_confirmed\"}",
+      "Result: /home/rob/debug_output/place_execution/20260929_154346/result.json",
+      "最终抓�?pose 图片�?home/rob/debug_output/place_execution/20260929_154346/round_0001/grasp_pose_overlay.png",
+      "Connection to 192.168.0.13 closed."
+    ],
+    "remote_result_json_path": "/home/rob/debug_output/place_execution/20260929_154346/result.json",
+    "remote_result_summary": {
+      "outcome": "success",
+      "detected_count": 1,
+      "object_count": 1,
+      "completed_count": 1,
+      "grasp_verified": false,
+      "placement_verified": false,
+      "gripper_feedback": "target_state_confirmed",
+      "returned_home": true
+    }
+  },
+  "notes": [
+    "The commanded xyz values are target commands only; no frozen feedback interface was provided to prove exact final placement.",
+    "The remote pipeline exited successfully after detecting one bowl, executing grasp/place, and returning home.",
+    "Terminal capture contains some encoding artifacts in Chinese lines, but the remote exit code was 0."
+  ],
+  "example_provenance": {
+    "historical_example_only": true,
+    "source": "Original project arm_last_run.json, copied during extraction.",
+    "not_a_run_of_this_project": true,
+    "not_execution_authorization": true
+  }
+}

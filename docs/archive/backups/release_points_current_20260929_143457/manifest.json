@@ -1,0 +1,139 @@
+{
+  "created_at": "2026-09-29T14:34:57+08:00",
+  "active_config": "src/grasp_executor/config/place_zones.json",
+  "coordinate_frame": "base/tool0",
+  "release_rule": "release_position = place_reference_position - (0, 0, place_drop_distance)",
+  "zones": {
+    "左上": {
+      "enabled": true,
+      "release_position_m": {
+        "x": -0.28202733742201447,
+        "y": -0.5122042338674049,
+        "z": 0.2190071004733892
+      },
+      "release_orientation_xyzw": {
+        "x": -0.018690243105190425,
+        "y": 0.9998227676368724,
+        "z": -0.002178054986393952,
+        "w": 0.0006034932391802165
+      },
+      "ready_position_m": {
+        "x": -0.28202733742201447,
+        "y": -0.5122042338674049,
+        "z": 0.3190071004733892
+      },
+      "drop_distance_m": 0.1
+    },
+    "左下": {
+      "enabled": true,
+      "release_position_m": {
+        "x": -0.15777492649630748,
+        "y": -0.3552541966339209,
+        "z": 0.22514432181244656
+      },
+      "release_orientation_xyzw": {
+        "x": -0.018573720734857354,
+        "y": 0.9998250733429211,
+        "z": -0.0021124731360490047,
+        "w": 0.0006140603678517314
+      },
+      "ready_position_m": {
+        "x": -0.15777492649630748,
+        "y": -0.3552541966339209,
+        "z": 0.32514432181244657
+      },
+      "drop_distance_m": 0.1
+    },
+    "中间": {
+      "enabled": true,
+      "release_position_m": {
+        "x": -0.5777122796796046,
+        "y": -0.30431827649031806,
+        "z": 0.2025063268803816
+      },
+      "release_orientation_xyzw": {
+        "x": -0.01868398617503222,
+        "y": 0.9998230206654793,
+        "z": -0.002107574353709024,
+        "w": 0.0006278043575966026
+      },
+      "ready_position_m": {
+        "x": -0.5777122796796046,
+        "y": -0.30431827649031806,
+        "z": 0.3025063268803816
+      },
+      "drop_distance_m": 0.1
+    },
+    "右上": {
+      "enabled": true,
+      "release_position_m": {
+        "x": -0.8295093477569525,
+        "y": 0.055704598902790226,
+        "z": 0.2048408181743376
+      },
+      "release_orientation_xyzw": {
+        "x": -0.018612828624303444,
+        "y": 0.9998244623339794,
+        "z": -0.002070786427728318,
+        "w": 0.0005647767187637281
+      },
+      "ready_position_m": {
+        "x": -0.8295093477569525,
+        "y": 0.055704598902790226,
+        "z": 0.3048408181743376
+      },
+      "drop_distance_m": 0.1
+    },
+    "右下": {
+      "enabled": true,
+      "release_position_m": {
+        "x": -0.7385131248168761,
+        "y": 0.25139649275717446,
+        "z": 0.19254296561956238
+      },
+      "release_orientation_xyzw": {
+        "x": -0.01868134611383776,
+        "y": 0.9992448577965353,
+        "z": -0.034069350973808525,
+        "w": 2.8262704282064374e-05
+      },
+      "ready_position_m": {
+        "x": -0.7385131248168761,
+        "y": 0.25139649275717446,
+        "z": 0.2925429656195624
+      },
+      "drop_distance_m": 0.1
+    },
+    "blue": {
+      "enabled": true,
+      "release_position_m": {
+        "x": -0.23773145428860332,
+        "y": -0.4027826140479399,
+        "z": 0.20166373941225188
+      },
+      "release_orientation_xyzw": {
+        "x": -0.018557579650542774,
+        "y": 0.9998255607644015,
+        "z": -0.0020413195248666326,
+        "w": 0.0005452469725220606
+      },
+      "ready_position_m": {
+        "x": -0.23773145428860332,
+        "y": -0.4027826140479399,
+        "z": 0.3016637394122519
+      },
+      "drop_distance_m": 0.1
+    }
+  },
+  "sha256": {
+    "src/grasp_executor/config/place_zones.json": "756c1050d20e8904208253076f9915808f7c013aa3de25323aee31d4279c3d03",
+    "docs/当前放置点.md": "8a350e9776bc4f6f44d8d1732541049091055845195c0c4904c3ef67689bb97b",
+    "docs/teach_capture_left_upper_release_20260928_current.json": "ce7946e600dd236b1a204cb7d6b8b9e15c4518af093014e3d512234af241eb8a",
+    "docs/teach_capture_left_lower_release_20260928_current.json": "8d56d0dacc1022dbe6351ba4a0e96d5d5f456139d0c0936487891c5514138296",
+    "docs/teach_capture_center_20260928_153251.json": "f68bd1a220f9e50ad8ebafb7e9e7348837fbae46c38f721e2469207c8550ba43",
+    "docs/teach_capture_right_upper_20260928_171849.json": "f3dccf12f7e37d92066de43d1bd12c4720832d08efbf9ec0e2982faf1023c7df",
+    "docs/teach_capture_right_lower_20260928_191303.json": "6f1dc53e5ca958e147df6451e409c0581ef77502cf1f3f00256512d5f379d45d",
+    "docs/blue_release_position.json": "264d2788ea942f66a3c54fcc63e62c52c20f27b32a61bfc7f80c687da3c148bf",
+    "docs/current_start_position.json": "f0797dffaff0b230abebcea2d6c2407f1b0a1f5811d63df0534a9f6dea0f42f7"
+  }
+}

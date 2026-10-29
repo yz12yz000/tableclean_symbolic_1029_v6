@@ -1,0 +1,55 @@
+schema_version: 1
+coordinate_frame: base
+target_kind: release_position_base_tool0
+command_precision_decimals: 6
+
+zones:
+  左上:
+    x: -0.282027
+    y: -0.512204
+    z: 0.197007
+    aliases: ["左上角"]
+  左下:
+    x: -0.184071
+    y: -0.383461
+    z: 0.170034
+    aliases: ["左下角"]
+  中间:
+    x: -0.577712
+    y: -0.304318
+    z: 0.180506
+    aliases: ["中心", "桌子中间"]
+  右上:
+    x: -0.829509
+    y: 0.055705
+    z: 0.182840
+    aliases: ["右上角"]
+  右下:
+    x: -0.741315
+    y: 0.187148
+    z: 0.169976
+    aliases: ["右下角"]
+  blue:
+    x: -0.237731
+    y: -0.402782
+    z: 0.179663
+    aliases: ["蓝色区域", "蓝色", "blue区域"]
+
+derived_midpoints:
+  左侧:
+    from: ["左上", "左下"]
+    aliases: ["桌子左侧"]
+  右侧:
+    from: ["右上", "右下"]
+    aliases: ["桌子右侧"]
+  上侧:
+    from: ["左上", "右上"]
+    aliases: ["桌子上侧"]
+  下侧:
+    from: ["左下", "右下"]
+    aliases: ["桌子下侧"]
+
+interpolation_rule:
+  formula: "P(t) = (1-t)A + tB"
+  allowed_range: [0.0, 1.0]
+  ask_when_phrase_is_not_unique: true

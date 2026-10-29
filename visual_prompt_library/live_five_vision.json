@@ -1,0 +1,44 @@
+{
+  "rgb_topic": "/camera/color/image_raw",
+  "pointcloud_topic": "/camera/depth/points",
+  "depth_image_topic": "/camera/depth/image_raw",
+  "depth_info_topic": "/camera/depth/camera_info",
+  "output_topic": "/yolo_vision/object_cloud",
+  "target_class": "bowl",
+  "confidence": 0.25,
+  "imgsz": 960,
+  "device": "cpu",
+  "model_path": "models/visual_prompt_releases/live_five_v001/model.pt",
+  "sync_queue_size": 20,
+  "sync_slop": 0.1,
+  "input_timeout": 90.0,
+  "min_points": 30,
+  "expected_width": 1280,
+  "expected_height": 800,
+  "publish_debug": true,
+  "max_source_age": 10.0,
+  "inference_roi": [
+    330,
+    375,
+    930,
+    595
+  ],
+  "inference_tile_size": 0,
+  "tile_overlap": 0.5,
+  "tile_mask_iou": 0.5,
+  "tile_single_confidence": 0.25,
+  "scene_classes": [
+    "bowl",
+    "tray",
+    "cup",
+    "plate",
+    "spoon"
+  ],
+  "class_aliases": {
+    "plate": "bowl",
+    "cup": "bowl"
+  },
+  "class_confidences": {
+    "tray": 0.5
+  }
+}

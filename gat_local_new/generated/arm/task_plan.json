@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "plan_id": "35f81bda-c984-44dc-ba16-fcdef9b668ad",
+  "protocol_version": "arm-runner-v1",
+  "task_type": "arm_bowl_place",
+  "raw_user_request": "让机械臂把碗放到右侧",
+  "robot": {
+    "robot_id": "arm-01",
+    "kind": "robot_arm",
+    "transport": "local",
+    "workspace": "/home/rob/table_clean_ws"
+  },
+  "target": {
+    "object": "bowl",
+    "position": "右侧"
+  },
+  "source": {
+    "arm_config": "config/robots/arm.yaml",
+    "place_zones": "config/robots/arm_place_zones.yaml",
+    "skill": ".opencode/skills/gat-arm-deployment/SKILL.md",
+    "arm_config_sha256": "cad6f8ca5d3dcdb4398f1ab88c7fe73979fb96e3369ec707550469d309713017",
+    "place_zones_sha256": "c01270571b2eef226962d866854f6d4c786847f83da6a9935e9b2023c2c442bc",
+    "skill_sha256": "0fb3d12ae234a1499ff09c4569a13e001f6177e0ea331855dbaae8a3b6d06b45"
+  },
+  "source_of_truth": {
+    "arm_config": "config/robots/arm.yaml",
+    "place_zones": "config/robots/arm_place_zones.yaml",
+    "skill": ".opencode/skills/gat-arm-deployment/SKILL.md"
+  },
+  "placement_resolution": {
+    "requested_position": "右侧",
+    "resolved_position": "右侧",
+    "resolution_method": "derived_midpoint_interpolation",
+    "interpolation": {
+      "from": [
+        "右上",
+        "右下"
+      ],
+      "formula": "(A + B) / 2"
+    },
+    "coordinate_frame": "base",
+    "target_kind": "release_position_base_tool0",
+    "target_xyz": {
+      "x": -0.785412,
+      "y": 0.121427,
+      "z": 0.176408
+    },
+    "command_precision_decimals": 6
+  },
+  "object_selection_assumption": {
+    "requested_object": "碗",
+    "execution_assumption": "scene_has_only_one_bowl"
+  },
+  "safety": {
+    "require_user_confirmation_before_live_run": true,
+    "do_not_assume_feedback": true,
+    "do_not_guess_ros_interfaces": true
+  },
+  "local_execution": {
+    "parameterized_program": "/home/rob/table_clean_ws/run_pipeline_place_test.sh",
+    "program_arguments": [
+      "--x",
+      "-0.785412",
+      "--y",
+      "0.121427",
+      "--z",
+      "0.176408"
+    ],
+    "program_command": "bash /home/rob/table_clean_ws/run_pipeline_place_test.sh --x -0.785412 --y 0.121427 --z 0.176408"
+  },
+  "preflight": {
+    "protocol_version": "arm-runner-v1",
+    "arm_config_sha256": "cad6f8ca5d3dcdb4398f1ab88c7fe73979fb96e3369ec707550469d309713017",
+    "place_zones_sha256": "c01270571b2eef226962d866854f6d4c786847f83da6a9935e9b2023c2c442bc"
+  },
+  "mode": "preview",
+  "limits": {
+    "max_attempts": 1,
+    "deadline_s": 900
+  },
+  "execution_status": "awaiting_confirmation",
+  "model": {
+    "provider": "opencode-current",
+    "model": "selected-by-opencode",
+    "plan_hash": "0fffd9910cd67c6993bf5c581f16d9646ed3f3a56686ba86701f778b5d75ff2d"
+  }
+}

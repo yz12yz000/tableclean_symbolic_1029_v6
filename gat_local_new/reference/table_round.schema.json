@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Table round v2",
+  "description": "Hash, identity, phase/action and object-slot membership are also validated by table_round_protocol.py.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/request"
+    },
+    {
+      "$ref": "#/$defs/decision"
+    }
+  ],
+  "$defs": {
+    "request": {
+      "type": "object",
+      "required": [
+        "round_protocol_version",
+        "plan_id",
+        "task_id",
+        "observation_id",
+        "scene_revision",
+        "phase",
+        "home_confirmed",
+        "files",
+        "choices",
+        "previous_action",
+        "rgbd_pair",
+        "images",
+        "scene_sha256"
+      ],
+      "properties": {
+        "round_protocol_version": {
+          "const": "table-round-v2"
+        },
+        "plan_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "scene_revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "phase": {
+          "enum": [
+            "select",
+            "completion_review"
+          ]
+        },
+        "home_confirmed": {
+          "const": true
+        },
+        "files": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "file",
+              "sha256"
+            ],
+            "properties": {
+              "file": {
+                "enum": [
+                  "camera_rgb.jpg",
+                  "agent_overlay.jpg",
+                  "scene.json"
+                ]
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "object_id",
+              "grasp_method",
+              "candidate_count",
+              "slots"
+            ],
+            "properties": {
+              "object_id": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "grasp_method": {
+                "const": "rim_pinch"
+              },
+              "candidate_count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "slots": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 3,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "slot_id",
+                    "planning_status"
+                  ],
+                  "properties": {
+                    "slot_id": {
+                      "type": "string"
+                    },
+                    "planning_status": {
+                      "const": "geometry_only"
+                    },
+                    "label": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "images": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "scene_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "plan_id",
+        "task_id",
+        "observation_id",
+        "scene_revision",
+        "action"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 2
+        },
+        "plan_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "scene_revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "action": {
+          "enum": [
+            "select",
+            "reobserve",
+            "finish",
+            "stop"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "selection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "object_id",
+            "slot_id"
+          ],
+          "properties": {
+            "object_id": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "slot_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "action": {
+                "const": "select"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "selection"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "selection"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

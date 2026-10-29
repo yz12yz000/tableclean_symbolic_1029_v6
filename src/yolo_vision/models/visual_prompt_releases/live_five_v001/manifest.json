@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "method": "yoloe_visual_prompt_no_training",
+  "classes": [
+    "bowl",
+    "tray",
+    "cup",
+    "plate",
+    "spoon"
+  ],
+  "profile": {
+    "schema_version": 1,
+    "annotation": "annotations/live_five_table_20261022.json",
+    "classes": [
+      "bowl",
+      "tray",
+      "cup",
+      "plate",
+      "spoon"
+    ],
+    "inference_roi": [
+      220,
+      300,
+      1000,
+      700
+    ],
+    "imgsz": 960
+  },
+  "annotation": {
+    "schema_version": 1,
+    "image": "images/live_table_20261022.png",
+    "image_size": [
+      1280,
+      800
+    ],
+    "objects": [
+      {
+        "class_id": 0,
+        "bbox_xyxy": [
+          644,
+          386,
+          736,
+          467
+        ]
+      },
+      {
+        "class_id": 0,
+        "bbox_xyxy": [
+          710,
+          482,
+          766,
+          536
+        ]
+      },
+      {
+        "class_id": 0,
+        "bbox_xyxy": [
+          801,
+          476,
+          886,
+          558
+        ]
+      },
+      {
+        "class_id": 1,
+        "bbox_xyxy": [
+          351,
+          392,
+          580,
+          533
+        ]
+      },
+      {
+        "class_id": 2,
+        "bbox_xyxy": [
+          590,
+          466,
+          637,
+          525
+        ]
+      },
+      {
+        "class_id": 3,
+        "bbox_xyxy": [
+          747,
+          399,
+          849,
+          478
+        ]
+      },
+      {
+        "class_id": 6,
+        "bbox_xyxy": [
+          626,
+          401,
+          710,
+          449
+        ]
+      }
+    ]
+  },
+  "ultralytics_version": "8.4.89",
+  "base_model_sha256": "48f24206bc8680d60cbbfa296b0140da849669b9515058b72f5a945142df0654",
+  "reference_sha256": "9f65858ea99060c708863977f07f34e2098aeb27ecb417113f18061fe8cf2d72",
+  "annotation_sha256": "7dec4f61b633fc5954c4fce69e939614994260e8c1cf185c9d8006c6ea62117d",
+  "model_sha256": "f792d3ec08f59bd9426ec40073ed1cee30291c6df02edda9349ba0b686428a87",
+  "validation_status": "reference_smoke_only_not_hardware_approved"
+}

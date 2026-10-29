@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "image": "images/pattern_table.png",
+  "image_size": [
+    1280,
+    800
+  ],
+  "objects": [
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        730,
+        435,
+        830,
+        539
+      ]
+    },
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        625,
+        437,
+        711,
+        520
+      ]
+    },
+    {
+      "class_id": 1,
+      "bbox_xyxy": [
+        420,
+        413,
+        617,
+        527
+      ]
+    }
+  ]
+}

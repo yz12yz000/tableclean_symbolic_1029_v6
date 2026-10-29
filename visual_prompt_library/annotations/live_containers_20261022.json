@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "image": "images/live_five_table_20261022.png",
+  "image_size": [
+    1280,
+    800
+  ],
+  "objects": [
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        621,
+        470,
+        727,
+        564
+      ]
+    },
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        677,
+        432,
+        753,
+        506
+      ]
+    },
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        794,
+        423,
+        849,
+        470
+      ]
+    },
+    {
+      "class_id": 1,
+      "bbox_xyxy": [
+        351,
+        391,
+        580,
+        532
+      ]
+    },
+    {
+      "class_id": 2,
+      "bbox_xyxy": [
+        485,
+        409,
+        535,
+        466
+      ]
+    },
+    {
+      "class_id": 0,
+      "bbox_xyxy": [
+        755,
+        458,
+        865,
+        552
+      ]
+    },
+    {
+      "class_id": 6,
+      "bbox_xyxy": [
+        749,
+        491,
+        847,
+        531
+      ]
+    }
+  ]
+}

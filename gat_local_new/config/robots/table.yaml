@@ -1,0 +1,53 @@
+# Fixed deployment contract for the table-cleaning runner.
+# Geometry, TF, tray dimensions, and motion approval remain owned by table_clean_ws.
+robot_id: table-arm-01
+kind: table_cleaning_runner
+transport: local
+workspace: /home/rob/table_clean_ws
+runner:
+  protocol_version: table-runner-v1
+  runner_revision: table-clean-runner-v2
+  wrapper: ./run_clear_table.sh
+  policy_argument: --task-policy
+  output_argument: --output-dir
+  preview_args: []
+  execute_args: [--execute]
+  task_directory_template: /home/rob/table_clean_ws/.agent_tasks/{plan_id}
+  policy_filename: task_policy.json
+  output_subdirectory: output
+  result_filename: result.json
+  baseline_policy_filename: preview_policy.json
+  baseline_result_filename: preview_result.json
+  baseline_policy_argument: --baseline-policy
+  baseline_result_argument: --baseline-result
+  copy_mode: local
+  execution_mode: local_subprocess
+  shell: bash
+preflight:
+  # The runner must return and match these values before a live run.
+  require_runner_revision: true
+  require_workspace_revision_match: true
+  require_config_digest: true
+  require_model_digest: true
+  require_protocol_match: true
+  require_successful_online_preview_before_execute: true
+safety:
+  require_user_confirmation_before_live_run: true
+  require_new_policy_hash: true
+  reject_stale_policy: true
+  allow_execute_without_motion_approval: false
+  passwords_in_config: false
+  arbitrary_shell: false
+  arbitrary_ros: false
+
+round_session:
+  protocol: table-round-v2
+  tool: tools/table_session.py
+  decision_argument: --agent-decision-dir
+  protocol_argument: --agent-round-protocol
+  status_filename: agent_status.json
+  cancel_filename: cancel.json
+  decisions_directory: decisions
+  decision_timeout_s: 120
+  poll_interval_s: 2
+  max_slots_per_object: 3
